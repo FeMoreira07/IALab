@@ -15,7 +15,7 @@ export const Container = styled.div`
   flex-direction: row;
   width: 100%;
   height: 100px;
-  
+
   align-items: center;
   justify-content: space-around;
   animation: slide-down 1s ease-out;
@@ -40,4 +40,8 @@ export const ButtonsList = styled.ul`
   display: flex;
   list-style: none;
   gap: 100px;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
