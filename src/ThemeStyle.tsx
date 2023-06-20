@@ -4,9 +4,7 @@ export const theme = {
     darkBlue: "#161e22",
     darkerBlue: "#12181b",
   },
-  fonts: {
-    light: "Rubik Light, sans-serif",
-    regular: "Rubik, sans-serif",
-    bold: "Rubik Bold, sans-serif",
+  font: {
+    rubik: "'Rubik', sans-serif",
   },
 };
