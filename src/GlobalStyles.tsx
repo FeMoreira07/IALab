@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${theme.font.rubik};
     font-weight: 700;
     background-color: ${theme.colors.darkBlue};
-    color: ${theme.colors.white}
+    color: ${theme.colors.white};
   }
 `;
 

@@ -5,6 +5,7 @@ export const Banner = styled.div`
   display: flex;
   align-items: center;
   padding: 90px;
+  overflow: hidden;
 
   @media (max-width: 570px) {
     padding: 50px;
@@ -13,6 +14,17 @@ export const Banner = styled.div`
 
 // TitleSection component
 export const TitleSection = styled.div`
+  @keyframes ShowFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -33,10 +45,33 @@ export const TitleSection = styled.div`
       font-size: 55px;
     }
   }
+
+  .FirstText {
+    animation: ShowFromLeft 1.2s forwards;
+  }
+  .SecondText{
+    animation: ShowFromLeft 1.7s forwards;
+  }
+  .ThirdText{
+    animation: ShowFromLeft 2s forwards;
+  }
 `;
 
 // ImageSection component
 export const ImageSection = styled.div`
+  @keyframes ShowFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  animation: ShowFromRight 2s forwards;
+
   height: 100%;
   width: 50%;
   display: flex;

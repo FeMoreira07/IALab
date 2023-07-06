@@ -1,4 +1,5 @@
 import { MainBanner } from "./components/MainBanner/MainBanner";
+import { Slider } from "./components/Slider/slider";
 import { Header } from "./components/header/header";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <MainBanner/>
+      <Slider/>
     </>
   );
 }

@@ -5,9 +5,9 @@ export function MainBanner() {
   return (
     <Banner>
       <TitleSection>
-        <h1>Visual</h1>
-        <h1>Intelligence</h1>
-        <h1>Unleashed.</h1>
+        <h1 className="FirstText">Visual</h1>
+        <h1 className="SecondText">Intelligence</h1>
+        <h1 className="ThirdText">Unleashed.</h1>
       </TitleSection>
       <ImageSection>
         <img src={image} alt="BackGroundImage" />
